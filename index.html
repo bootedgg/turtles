@@ -1,0 +1,363 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <!-- CSRF Token -->
+    <meta name="csrf-token" content="q6n4X0mWkHTCB3rWKZaqyhHFDOjbWD974TL1Q8Oz">
+
+    <title>Booted</title>
+
+    <!-- Styles -->
+    <link rel="stylesheet" href="../cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="dist/bootstrap/bootstrap.min.css" rel="stylesheet">
+    <link href="dist/bootstrap/bootstrap-big-grid.min.css" rel="stylesheet">
+    <link href="dist/sweetalert2/sweetalert2.min.css" rel="stylesheet">
+    <link href="css/subscription.css" rel="stylesheet">
+    <link href="css/stylee8c8.css?v=1.22" rel="stylesheet">
+
+    <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
+        <link href="css/chat.css" rel="stylesheet">
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-115016514-1"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+
+        gtag('config', 'UA-115016514-1');
+    </script>
+    <script src="../apis.google.com/js/platform.js"></script>
+    <script>
+        window.global = {"csrfToken":"q6n4X0mWkHTCB3rWKZaqyhHFDOjbWD974TL1Q8Oz","baseUrl":"http:\/\/booted.gg"};
+    </script>
+
+</head>
+<body>
+
+    <div id="loader">
+    <div class="spinner">
+        <div class="rect1"></div>
+        <div class="rect2"></div>
+        <div class="rect3"></div>
+        <div class="rect4"></div>
+        <div class="rect5"></div>
+    </div>
+</div>    <div id="app">
+
+        <nav id="menu" class="navbar  navbar-fixed-top top-navbar">
+            <div class="container-fluid">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <a class="navbar-brand" href="index.html"><img  src="images/logo-x64.png" alt="Logo">Booted.GG
+                    </a>
+                </div>
+                <div id="navbar" class="navbar-collapse collapse">
+                    <ul class="nav navbar-nav">
+                        <li class="dropdown">
+                            <a class="dropdown-toggle" data-toggle="dropdown" href="#"><i class="fa fa-link" aria-hidden="true"></i> Follow Me
+                                <span class="caret"></span>
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li>
+                                    <a href="https://twitter.com/bootedyt" target="_blank">
+                                        <i class="fa fa-twitter"></i>
+                                        Twitter
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="https://www.twitch.tv/bootedgang" target="_blank">
+                                        <i class="fa fa-twitch"></i>
+                                        Twitch
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="https://gaming.youtube.com/channel/UCYr-0qO2KL-v9KlQyC8z4SQ" target="_blank">
+                                        <i class="fa fa-youtube"></i>
+                                         Channel
+                                    </a></li>
+                                <li>
+                                    <a href="https://gaming.youtube.com/c/BootedYT/live" target="_blank">
+                                        <i class="fa fa-video-camera"></i>
+                                         Live
+                                    </a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li>
+                                                            <a  href="https://accounts.google.com/signin/oauth?client_id=1034770854624-v07vgkum09gg3vmb0uj2dd6ou249bvit.apps.googleusercontent.com&as=BcYMz13djePCbRRwWkCcRA&nosignup=1&destination=http://booted.gg&approval_state=!ChRQYm9LLUxsLXBfS0x2bWU2YnVCZxIfTXlDM3dxOU13QklXQU9FaERQUmpBazNLU3l2M1BoWQ%E2%88%99AB8iHBUAAAAAWx_lptW1BKZeNbSf5l8aAQk9714_xQEJ&delegation=1&xsrfsig=AHgIfE99Y2-K0dFRzO40APjITmgXLzfNUA">
+                                    <i class="fa fa-paper-plane" aria-hidden="true"></i> Subscribe
+                                </a>
+                                                    </li>
+                        <li>
+                            <a href="https://streamlabs.com/bootedgang" target="_blank">
+                                <i class="fa fa-heart" aria-hidden="true"></i> Donate
+                            </a>
+                        </li>
+                        <!--
+                        <li>
+                            <a href="dropbot.html" target="_blank">
+                                <i class="fa fa-drupal" aria-hidden="true"></i> Drops
+                            </a>
+                        </li>
+                    -->
+                        <li>
+                            <a href="giveaways.html" class="navbar-icon" target="_blank"><img src="images/win.png"> Giveaways</a>
+                        </li>
+                    </ul>
+                    <ul class="nav navbar-nav navbar-right">
+                        <li class="viewers" style="display: none">
+                            <a href="#"  class="stream-status stream-off" >
+                                <span>
+                                </span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#"  class="stream-status stream-status-wrapp stream-on">
+                                <i class="fa fa-circle" aria-hidden="true"></i>
+                                <span>
+                                                                           Live
+                                                                    </span>
+
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" class="nav-subscribe">
+                                <div style="width: 122px" class="g-ytsubscribe" data-channelid="UCYr-0qO2KL-v9KlQyC8z4SQ" data-layout="default" data-count="default"></div>
+                            </a>
+                        </li>
+                                                    <li>
+                                <a href="https://accounts.google.com/signin/oauth?client_id=1034770854624-v07vgkum09gg3vmb0uj2dd6ou249bvit.apps.googleusercontent.com&as=BcYMz13djePCbRRwWkCcRA&nosignup=1&destination=http://booted.gg&approval_state=!ChRQYm9LLUxsLXBfS0x2bWU2YnVCZxIfTXlDM3dxOU13QklXQU9FaERQUmpBazNLU3l2M1BoWQ%E2%88%99AB8iHBUAAAAAWx_lptW1BKZeNbSf5l8aAQk9714_xQEJ&delegation=1&xsrfsig=AHgIfE99Y2-K0dFRzO40APjITmgXLzfNUA" class="nav-menu-sing" >
+                                    <span>Sign In</span>
+
+                                    <svg version="1.1" id="unknown-user" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                                         width="30px" height="50px" viewBox="0 0 457.518 457.518" style="enable-background:new 0 0 457.518 457.518;"
+                                         xml:space="preserve">
+                                <g>
+                                    <path d="M199.675,242.678c66.986,0,121.321-54.354,121.321-121.272C320.996,54.363,266.671,0,199.675,0
+                                C132.643,0,78.385,54.373,78.385,121.406C78.385,188.324,132.633,242.678,199.675,242.678z"/>
+                                    <path d="M353.011,275.975c-6.406-13.723-14.478-27.521-24.786-40.689c-5.546-7.057-15.663-14.802-25.445-20.109
+                                c-25.36,28.42-62.118,46.416-103.104,46.416c-40.956,0-77.705-17.996-103.036-46.349c-9.562,5.431-19.412,13.177-24.776,20.214
+                                C54.459,258.168,27.599,302.176,23.314,361.5c-0.899,12.518,5.059,31.633,15.52,38.93c19.852,13.895,62.673,31.672,151.833,31.672
+                                c30.868,0,56.878-1.904,78.863-4.867c-8.874-14.967-14.066-32.369-14.066-50.998C255.454,321.836,298.974,277.504,353.011,275.975z
+                                "/>
+                                    <path d="M353.011,294.955c-44.886,0-81.281,36.395-81.281,81.281s36.396,81.281,81.281,81.281
+                                c44.887,0,81.281-36.395,81.281-81.281C434.292,331.342,397.907,294.955,353.011,294.955z M349.406,427.09
+                                c-8.004,0-12.145-5.145-12.145-11.428c0-5.852,4.57-11.139,11.714-11.139c7.851,0,12.145,4.713,12.145,11.139
+                                C361.11,421.516,356.97,427.09,349.406,427.09z M364.113,375.08c-4.428,2.869-5.996,6.291-5.996,11.436v10.146h-17.854
+                                c-0.573-4.15-1.434-12.287-1.434-15.854c0-12.719,6.426-15.865,13.291-20.148c4.571-2.869,7.995-5.289,7.995-10.434
+                                c0-5.422-3.29-7.852-8.425-7.852c-4.284,0-8.712,1.139-12.288,2.143l-3.289-15.721c3.71-1.568,12.431-3.424,19.995-3.424
+                                c23.858,0,27.291,14.287,27.291,21.574C383.4,361.807,375.684,367.516,364.113,375.08z"/>
+                                </g>
+
+                                </svg>
+                                </a>
+                            </li>
+                                              </ul>
+                </div>
+                <!--/.nav-collapse -->
+            </div>
+        </nav>
+            <div class="container-fluid" ng-app="myApp" ng-controller="appCtrl">
+
+    <div class="row">
+        <div  id="streaming-wrapper">
+            <iframe width="743" height="418"
+                    src="https://gaming.youtube.com/embed/live_stream?channel=UCYr-0qO2KL-v9KlQyC8z4SQ&amp;autoplay=1&amp;modestbranding=1&amp;rel=0&amp;enablejsapi=1"
+                    frameborder="0"
+                    allowfullscreen>
+            </iframe>
+        </div>
+       
+        <div id="chat-wrapper">
+            <div class="chat-header">
+                <div class="live-chat-header">
+                    <button class="button-chat button-chat-toggle button-chat-head">
+                        <i class="fa fa-angle-right" aria-hidden="true"></i>
+                    </button>
+                    <span class="live-title">Live Chat</span>
+                    <span class="live-users" data-toggle="tooltip" data-placement="left"   title="Online Users">
+                        <i class="fa fa-circle" aria-hidden="true" ></i>
+                        <span id="u-count"></span>
+                    </span>
+                </div>
+
+            </div>
+            <div class="chat-content">
+                <ul class="chat hidden">
+                    <li  ng-repeat="message in messages" ng-class="message.snippet.type == 'textMessageEvent' ? 'text-message' : ( message.snippet.type == 'newSponsorEvent' ? 'new-sponsor' : '')">
+                            <div class="author-photo">
+                                <a href="https://youtube.com/channel/{[message.authorDetails.channelId]}" target="_blank" data-toggle="tooltip" data-placement="bottom" title="Go to channel"> <img ng-src="{[message.authorDetails.profileImageUrl]}" ></a>
+                            </div>
+                            <div class="message-content" ng-init="tier = (message.authorDetails.isTier) ? (message.authorDetails.isTier | getTier) : ''" ng-class="[tier.className, { 'owner': message.authorDetails.channelId === 'UCYr-0qO2KL-v9KlQyC8z4SQ', 'dev': message.authorDetails.channelId === 'UCIvSCFjlRKa2M93i7aQNQtg', 'moderator': message.authorDetails.isModerator, 'sponsor': message.authorDetails.isSponsor }]"  ng-if="message.snippet.type == 'textMessageEvent'">
+                                <span  class="chat-badges">
+                                    <span ng-if="message.authorDetails.channelId === 'UCYr-0qO2KL-v9KlQyC8z4SQ'" class="authorIcon owner-icon" data-toggle="tooltip" data-placement="bottom" title="Owner">
+                                        <svg viewBox="0 0 16 16" preserveAspectRatio="xMidYMid meet" focusable="false" class="yt-icon" style="pointer-events: none; display: block; width: 100%; height: 100%;"><g class="style-scope yt-icon"><polygon points="1.33333333 3.33333333 5.33333333 6 8 2 10.6666667 6 14.6666667 3.33333333 13.3333333 14 2.66666667 14" class="style-scope yt-icon"></polygon></g></svg>
+                                    </span>
+                                    <span ng-if="message.authorDetails.channelId === 'UCYr-0qO2KL-v9KlQyC8z4SQ'" class="authorIcon dev-icon" data-toggle="tooltip" data-placement="bottom" title="Developer">
+                                        <svg viewBox="0 0 16 16" preserveAspectRatio="xMidYMid meet" focusable="false" class="yt-icon" style="pointer-events: none; display: block; width: 100%; height: 100%;"><g fill-rule="evenodd" class="style-scope yt-icon"><path d="M1.5,7.27272727 L1.5,2.90909091 L8.04545455,0 L14.5909091,2.90909091 L14.5909091,7.27272727 C14.5909091,13.8181818 8.04545455,16 8.04545455,16 C8.04545455,16 1.5,13.8181818 1.5,7.27272727 L1.5,7.27272727 L1.5,7.27272727 Z M3.68181818,8.72727273 L4.77272727,7.63636364 L6.59090909,9.45454545 L11.3181818,4.72727273 L12.4090909,5.81818182 L6.59090909,11.6437073 L3.68181818,8.72727273 L3.68181818,8.72727273 L3.68181818,8.72727273 Z" class="style-scope yt-icon"></path></g></svg>
+                                    </span>
+                                    <span ng-if="message.authorDetails.isTier" class="authorIcon"  ng-class="tier.className+'-icon'" data-toggle="tooltip" data-placement="bottom" title="{[message.authorDetails.isTier]}">
+                                       <svg  ng-if="tier.num == 1" viewBox="0 0 32 32" preserveAspectRatio="xMidYMid meet" focusable="false" class="yt-icon" style="pointer-events: none;display: block;width: 100%;height: 100%;"><g class="style-scope yt-icon"><path d="M 32,10 H 20 L 16,0 12,10 H 0 L 8,20 4,32 16,25 28,32 24,20 32,10 z"></path></g></svg>
+                                        <svg  ng-if="tier.num == 2" viewBox="0 0 32 32" preserveAspectRatio="xMidYMid meet" focusable="false" class="yt-icon" style="pointer-events: none;display: block;width: 100%;height: 100%;"><g class="style-scope yt-icon"> <path  d="M48.057576345468235,-20.053849675851485H36.057576345468256L32.05757634546823,-30.053849675851485L28.057576345468206,-20.053849675851485H16.057576345468203L24.057576345468195,-10.053849675851485L20.05757634546821,1.946150324148526L32.05757634546823,-5.053849675851485L44.05757634546825,1.946150324148526L40.05757634546825,-10.053849675851485L48.057576345468235,-20.053849675851485Z" transform="matrix(0.486177 0 0 0.516974 0.519777 15.5575)" /> <path  d="M47.45787531067833,9.0671884603717H35.457875310678375L31.457875310678336,-0.9328115396283003L27.457875310678315,9.0671884603717H15.457875310678354L23.457875310678308,19.0671884603717L19.45787531067833,31.067188460371717L31.457875310678336,24.0671884603717L43.457875310678375,31.067188460371717L39.457875310678375,19.0671884603717L47.45787531067833,9.0671884603717Z" transform="matrix(0.486177 0 0 0.516974 0.889008 15.8037)" /> </g></svg>
+                                        <svg  ng-if="tier.num == 3" viewBox="0 0 32 32" preserveAspectRatio="xMidYMid meet" focusable="false" class="yt-icon" style="pointer-events: none; display: block; width: 100%; height: 100%;"><g class="style-scope yt-icon"> <path id="e2_path" d="M48.057576345468235,-20.053849675851485H36.057576345468256L32.05757634546823,-30.053849675851485L28.057576345468206,-20.053849675851485H16.057576345468203L24.057576345468195,-10.053849675851485L20.05757634546821,1.946150324148526L32.05757634546823,-5.053849675851485L44.05757634546825,1.946150324148526L40.05757634546825,-10.053849675851485L48.057576345468235,-20.053849675851485Z" transform="matrix(0.486177 0 0 0.516974 0.519777 15.5575)" /> <path id="e1_path" d="M64.67224435849651,9.543332111142526H52.67224435849657L48.672244358496556,-0.4566678888574742L44.67224435849653,9.543332111142526H32.67224435849654L40.67224435849651,19.543332111142526L36.67224435849653,31.543332111142547L48.672244358496556,24.543332111142526L60.67224435849657,31.543332111142547L56.67224435849657,19.543332111142526L64.67224435849651,9.543332111142526Z" transform="matrix(0.486177 0 0 0.516974 0.519777 15.5575)" /> <path id="path3324" d="M30.98572214971807,9.66807009075725H18.985722149718086L14.985722149718068,-0.33192990924274923L10.985722149718047,9.66807009075725H-1.0142778502819363L6.985722149718036,19.66807009075725L2.985722149718045,31.668070090757258L14.985722149718068,24.66807009075725L26.98572214971808,31.668070090757258L22.98572214971808,19.66807009075725L30.98572214971807,9.66807009075725Z" transform="matrix(0.486177 0 0 0.516974 0.519777 15.5575)" /> </g></svg>
+                                    </span>
+                                    <span ng-if="message.authorDetails.isModerator" class="authorIcon moderator-icon" data-toggle="tooltip" data-placement="bottom" title="Moderator">
+                                          <svg viewBox="0 0 16 16" preserveAspectRatio="xMidYMid meet" focusable="false" class="yt-icon" style="pointer-events: none; display: block; width: 100%; height: 100%;"><g class="style-scope yt-icon"><path d="M9.64589146,7.05569719 C9.83346524,6.562372 9.93617022,6.02722257 9.93617022,5.46808511 C9.93617022,3.00042984 7.93574038,1 5.46808511,1 C4.90894765,1 4.37379823,1.10270499 3.88047304,1.29027875 L6.95744681,4.36725249 L4.36725255,6.95744681 L1.29027875,3.88047305 C1.10270498,4.37379824 1,4.90894766 1,5.46808511 C1,7.93574038 3.00042984,9.93617022 5.46808511,9.93617022 C6.02722256,9.93617022 6.56237198,9.83346524 7.05569716,9.64589147 L12.4098057,15 L15,12.4098057 L9.64589146,7.05569719 Z" class="style-scope yt-icon"></path></g></svg>
+                                    </span>
+                                    <span ng-if="message.authorDetails.isSponsor" class="authorIcon sponsor-icon" data-toggle="tooltip" data-placement="bottom" title="Sponsor"></span>
+                                </span>
+                                <span class="chat-author">
+                                    {[message.authorDetails.displayName]}
+                                </span>
+                                <span class="chat-message" data-uid="{[message.authorDetails.channelId]}" ng-bind-html="message.snippet.displayMessage | linky:'_blank'"></span>
+                            </div>
+                            <div class="event-content" ng-if="message.snippet.type == 'newSponsorEvent'">
+                                    <div class="event-text">
+                                        {[ message.snippet.displayMessage.split('! ')[0] ]}!
+                                    </div>
+                                    <div class="detail-text">
+                                        {[ message.snippet.displayMessage.split('! ')[1] ]}
+                                    </div>
+                            </div>
+                                            </li>
+                </ul>
+            </div>
+            <div class="chat-footer">
+                                <div class="chat-login">
+                    <a href="https://accounts.google.com/signin/oauth?client_id=1034770854624-v07vgkum09gg3vmb0uj2dd6ou249bvit.apps.googleusercontent.com&as=BcYMz13djePCbRRwWkCcRA&nosignup=1&destination=http://booted.gg&approval_state=!ChRQYm9LLUxsLXBfS0x2bWU2YnVCZxIfTXlDM3dxOU13QklXQU9FaERQUmpBazNLU3l2M1BoWQ%E2%88%99AB8iHBUAAAAAWx_lptW1BKZeNbSf5l8aAQk9714_xQEJ&delegation=1&xsrfsig=AHgIfE99Y2-K0dFRzO40APjITmgXLzfNUA" class="btn  btn-lg btn-block text-uppercase">Sign in to add a message</a>
+                    <p>Your messages will be visible to all users</p>
+                </div>
+                            </div>
+
+        </div>
+        <!--chat-end-->
+    </div>
+</div>
+
+    </div>
+    <!-- Scripts -->
+    <script src="../cdnjs.cloudflare.com/ajax/libs/socket.io/2.0.4/socket.io.js"></script>
+    <script src="dist/jquery/jquery.min.js"></script>
+    <script src="dist/bootstrap/bootstrap.min.js"></script>
+    <script src="dist/notify/notify.min.js"></script>
+    <script src="dist/sweetalert2/sweetalert2.min.js"></script>
+    <script src="dist/jquery.countdown/jquery.countdown.min.js"></script>
+    <script>
+        var socket = io.connect("http://booted.gg:1738/");
+        $.ajaxSetup({
+            headers:
+            { 'X-CSRF-TOKEN': window.global.csrfToken }
+        });
+    </script>
+    <script src="js/main.js"></script>
+    
+
+
+    <script src="dist/angular/angular.min.js"></script>
+    <script src="dist/angular/angular-animate.min.js"></script>
+    <script src="dist/angular/angular-sanitize.min.js"></script>
+
+        <script >
+        (function () {
+            var app = angular.module("myApp", ["ngAnimate","ngSanitize"], function($interpolateProvider, $compileProvider) {
+                $compileProvider.debugInfoEnabled(false);
+                $interpolateProvider.startSymbol('{[');
+                $interpolateProvider.endSymbol(']}');
+            });
+            app.controller("appCtrl", function($scope) {
+                var $chat = $('.chat');
+                var $chatContent = $(".chat-content");
+                $scope.messages = [];
+                $scope.message = '';
+                socket.on('message deleted', function (uid) {
+                    $('.chat-message[data-uid="'+uid+'"]').html( "<i>​[message deleted]</i>" );
+                });
+                socket.on('message', function (data) {
+                    $chat.removeClass('hidden');
+                    var scroll_st =  $chatContent.prop('scrollHeight') - $chatContent.scrollTop() - $chatContent.height()<10;
+                    $scope.messages = $scope.messages.concat(data);
+                    $scope.messages = $scope.messages.slice(Math.max($scope.messages.length - 300, 0));
+                    $scope.$apply();
+                    $('.message-content:not(.moderator,.owner) .chat-message a').replaceWith( "<i>[website URL removed]</i>" );
+                    if(scroll_st){
+                        $chatContent.animate({ scrollTop: $chatContent.prop('scrollHeight') }, 0);
+                    }
+                    $scope.$apply();
+                    $chat.find('[data-toggle="tooltip"]').tooltip();
+                    $chat.find('[data-toggle="popover"]').popover();
+                });
+                var maxmsglist = [];
+                var unlock = true;
+                var msgtime  = null;
+                $scope.sendMessage = function () {
+                    if($scope.message.length<201 && $scope.message.trim().length>0){
+                        var message  = $scope.message;
+                        $scope.message = '';
+                        if(maxmsglist.length<3){
+                            if(msgtime) clearTimeout(msgtime);
+                            maxmsglist.push(new Date());
+                            $chatContent.animate({ scrollTop: $chatContent.prop('scrollHeight') }, 0);
+                            socket.emit('new message', message);
+                            msgtime =  setTimeout(function(){
+                                maxmsglist = [];
+                            },2000)
+                        }else{
+                            if(!unlock) return false;
+                            clearTimeout(msgtime);
+                            unlock = false;
+                            setTimeout(function(){
+                                unlock = true;
+                                maxmsglist = [];
+                            },6000)
+                        }
+                    }
+                };
+                var time  = $('#ban-timer').data('time');
+                var b_time = 600000;
+                if(time)userBanTime(new Date(time).getTime() + b_time);
+                socket.on('banned', function(errmsg){
+                    userBanTime(new Date().getTime() + b_time);
+                    $('.error-message').text(errmsg);
+                    $('.chat-error-content').fadeIn();
+                });
+                function userBanTime(time) {
+                    $('#ban-timer').countdown(time, function(event) {
+                        var $this = $(this);
+                        $this.html(event.strftime('%M:%S<span>minutes</span>'));
+                    }).on('finish.countdown', function(event) {
+                        $('.error-message-cont').remove();
+                        $('.btn-chat-reload').fadeIn();
+                    });
+                }
+            });
+            app.directive('ngEnter', function() {
+                return function(scope, element, attrs) {
+                    element.bind("keydown keypress", function(event) {
+                        if(event.which === 13) {
+                            scope.$apply(function(){
+                                scope.$eval(attrs.ngEnter);
+                            });
+                            event.preventDefault();
+                        }
+                    });
+                };
+            });
+            app.filter('getTier', function() {
+                return function(t) {
+                    return {
+                        num: t.slice(-1),
+                        className : t.replace(" ", "-").toLowerCase()
+                    };
+                }
+            });
+        })();
+    </script>
+        </body>
+</html>
